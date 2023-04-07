@@ -52,11 +52,38 @@
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <div class="fill">
-	<ol>
-		<li><a href="ficus.html">Ficus</a></li>
+	<ol id="sortedList">
+		<!--
+		<a href="Ficus.html"><li>Ficus</li></a>
+		<a href="Casuarina equisetifolia.html"><li>Casuarina equisetifolia</li></a>
+		<a href="Caryota urens.html"><li>Caryota urens</li></a>
+		<a href="Livistona chinensis.html"><li>Livistona chinensis</li></a>
+		<a href="Magnolia champaca.html"><li>Magnolia champaca</li></a>
+		<a href="Frangipani.html"><li>Frangipani</li></a>
+		-->
+
+		<li><a href="Ficus.html">Ficus</a></li>
 		<li><a href="Casuarina equisetifolia.html">Casuarina equisetifolia</a></li>
 		<li><a href="Caryota urens.html">Caryota urens</a></li>
+		<li><a href="Livistona chinensis.html">Livistona chinensis</a></li>
+		<li><a href="Magnolia champaca.html">Magnolia champaca</a></li>
+		<li><a href="Frangipani.html">Frangipani</a></li>
+		
 	</ol>
+	<script>
+		// Get the unsorted list
+		const unsortedList = document.getElementById("myList");
+		
+		// Convert the list items to an array
+		const itemsArray = Array.from(unsortedList.getElementsByTagName("li"));
+		
+		// Sort the array alphabetically
+		itemsArray.sort((a, b) => a.innerText.localeCompare(b.innerText));
+		
+		// Create a new list with the sorted items
+		const sortedList = document.getElementById("sortedList");
+		itemsArray.forEach(item => sortedList.appendChild(item));
+	  </script>
 
 
 </div>
