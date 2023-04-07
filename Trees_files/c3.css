@@ -24,7 +24,7 @@ section::before{
     
 }
 #imga{
-    background-image: url("PraQRti logo.jpg");
+    background-image: url("Trees_files/PraQRti logo.jpg");
     width: 100px;
     height: 100px;
 }
@@ -48,7 +48,7 @@ section::before{
 
 
 h1{
-    font-family: Georgia;
+    font-family: 'Signika', sans-serif;
     text-align: center;
     padding-top: 2%;    
 

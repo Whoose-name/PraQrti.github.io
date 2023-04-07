@@ -12,7 +12,7 @@ section{
     background-attachment: fixed;
 }
 section::before{
-    background-image:url("treebg.jpg");
+    background-image:url("home.jpg");
     background-size: cover;
     position: absolute;
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@ section::before{
     
 }
 #imga{
-    background-image: url("PraQRti logo.jpg");
+    background-image: url("Trees_files/PraQRti logo.jpg");
     width: 100px;
     height: 100px;
 }
@@ -48,11 +48,9 @@ section::before{
 
 
 h1{
-    font-family: Georgia;
+    font-family: 'Signika', sans-serif;
     text-align: center;
-    padding-top: 2%;
-    padding-right:43% ;
-    
+    padding-top: 2%;    
 
 }
 
@@ -85,6 +83,16 @@ p{
     font-family: 'Kanit', sans-serif;}
 
 
-    li{
-        font-family: 'Kanit', sans-serif;
+li{
+    font-family: 'Kanit', sans-serif;
+}
+.center{
+    text-align: center;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+.fill{
+    height: 100%;
+    width: 100%;
 }
