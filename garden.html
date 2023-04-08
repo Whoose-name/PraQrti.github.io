@@ -18,6 +18,33 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
 
+<script>
+	window.onload = function() {
+		sortList();
+	}
+
+	function sortList() {
+		var list, i, switching, b, shouldSwitch;
+		list = document.getElementById("myList");
+		switching = true;
+		while (switching) {
+			switching = false;
+			b = list.getElementsByTagName("LI");
+			for (i = 0; i < (b.length - 1); i++) {
+				shouldSwitch = false;
+				if (b[i].getElementsByTagName("A")[0].innerHTML.toLowerCase() > b[i + 1].getElementsByTagName("A")[0].innerHTML.toLowerCase()) {
+					shouldSwitch = true;
+					break;
+				}
+			}
+			if (shouldSwitch) {
+				b[i].parentNode.insertBefore(b[i + 1], b[i]);
+				switching = true;
+			}
+		}
+	}
+</script>
+
 </head>
 
 <body>
@@ -52,7 +79,7 @@
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <div class="fill">
-	<ol id="sortedList">
+	<ol id="myList">
 		<!--
 		<a href="Ficus.html"><li>Ficus</li></a>
 		<a href="Casuarina equisetifolia.html"><li>Casuarina equisetifolia</li></a>
@@ -76,22 +103,9 @@
 		<li><a href="Azadirachta indica.html">Azadirachta indica</a></li>
 		<li><a href="Ficus religiosa.html">Ficus religiosa</a></li>
 		<li><a href="Cassia fistula.html">Cassia fistula</a></li>
+		<li><a href="Hymenocallis littoralis.html">Hymenocallis littoralis</a></li>
 	</ol>
-	<script>
-		// Get the unsorted list
-		const unsortedList = document.getElementById("myList");
-		
-		// Convert the list items to an array
-		const itemsArray = Array.from(unsortedList.getElementsByTagName("li"));
-		
-		// Sort the array alphabetically
-		itemsArray.sort((a, b) => a.innerText.localeCompare(b.innerText));
-		
-		// Create a new list with the sorted items
-		const sortedList = document.getElementById("sortedList");
-		itemsArray.forEach(item => sortedList.appendChild(item));
-	  </script>
-
+	
 
 </div>
 </section>
