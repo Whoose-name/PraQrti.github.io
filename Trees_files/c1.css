@@ -84,3 +84,11 @@ p
 li{
     font-family: 'Kanit', sans-serif;
 }
+.a{
+    padding:0.5%;
+    float:left
+}
+.b{
+    padding: 0.5%;
+    float:right;
+}
