@@ -91,10 +91,7 @@ li{
     margin: auto;
     height: 100%;
 }
-.fill{
-    height: 100%;
-    width: 100%;
-}
+
 a:link{
     color: green;
     text-decoration: none;
