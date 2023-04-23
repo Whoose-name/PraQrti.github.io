@@ -5,13 +5,18 @@
 
 }
 
-
+html{
+    height: 100%;
+}
 section{
+    /* height:100vh; */
     width: 100%;
     position: relative;
     background-attachment: fixed;
+    margin: 0;
 }
 section::before{
+
     background-image:url("home.jpg");
     background-size: cover;
     position: absolute;
@@ -20,7 +25,7 @@ section::before{
     opacity: 0.2;
     content: '';
     inset: 0;
-
+    
     
 }
 #imga{
@@ -48,7 +53,7 @@ section::before{
 
 
 h1{
-    font-family: 'Signika', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
     padding-top: 2%;    
 
@@ -89,11 +94,12 @@ li{
     font-family: 'Kanit', sans-serif;
 }
 .center{
+   
     text-align: center;
     margin: auto;
     height: 100%;
     width: 100%;
-    padding: 1%;
+    padding: 2%;
 }
 .fill{
     height: 100%;
@@ -107,8 +113,8 @@ li{
 
 .container {
 	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 20px;
+	/* margin: 0 auto; */
+	/* padding: 0 20px; */
 }
 
 header {
@@ -144,6 +150,7 @@ nav a {
 main {
 	text-align: center;
 	padding: 100px 0;
+    height: 100%;
 }
 
 h2 {
@@ -193,7 +200,8 @@ h2 {
     grid-template-columns: 1fr 2fr;
     grid-gap: 20px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin:10px;
+    
   }
   
   .principal-photo img {
@@ -236,11 +244,13 @@ h2 {
   }
   
   .team-member {
+    
     text-align: center;
   }
   
   .praqrtiteam{
     color: black;
+    font-weight:600;
   }
   .team-member img {
     max-width: 100%;
@@ -255,6 +265,7 @@ h2 {
   }
   
   .team-member p {
+   
     font-size: 18px;
     color: #666;
   }
@@ -262,12 +273,12 @@ h2 {
 
 
 
-  body {
+body {
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(campus.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-
 }
+
 html{
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -276,4 +287,199 @@ html{
 
 .welcome{
     color: white;
+}
+
+
+/*  */
+
+.pra-heading {
+    color: #12cc45;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 40;
+}
+
+.qr-heading {
+    color: orange;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 40;
+}
+.follow-us-icon-container {
+    background-color: #faf7e8;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 15px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 22px;
+}
+
+
+
+.follow-us-heading {
+    text-align: center;
+    color: #183b56;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.follow-us-section-icon-container {
+    background-color: #faf7e8;
+    border-width: 0px;
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 22px;
+    margin: 10px;
+
+}
+
+.footer-section-container {
+    background-color: #0d2436;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.footer-section-container2 {
+    background-color: #081722;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+.footer-section-image {
+    width: 60px;
+    height: 60px;
+
+}
+
+.footer-heading {
+    color: #959ead;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.footer-section-order-place-discription {
+    color: #959ead;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 15px;
+}
+.prc-image{
+    padding-top:75px;
+}
+.bhanu-image{
+    height: 100px;
+    width: 180px;
+}
+
+
+
+.members-card-container{
+    padding-top: 20px;
+    height:40vh;
+    width: 28vh;
+    
+    border-width: 1;
+
+    margin: 60px;
+    margin-top: 5px;;
+    margin-bottom: 10px;
+    padding:10px;
+}
+
+.suyars-sir-image{
+    height: 24vh;
+    width: 24vh;
+    border-radius: 100px;
+}
+.team-description{
+    text-align: center;
+    font-size:25px;
+    
+}
+.meambers-names{
+    font-size:25px;
+   
+}
+.meambers-departmets{
+    font-size:20px;
+    
+}
+.meambers-departmets-span{
+    font-size:20px;
+    font-weight: 400;
+}
+.meambers-departmets-teacher{
+    font-size:20px;
+    font-weight: 550;
+}
+
+
+.follow-heading{
+    color:white;
+    text-align: right;
+
+}
+
+
+.footersection{
+    display: flex;
+    justify-content: space-between;
+}
+
+.follow-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/*  */
+.aboutus{
+    /* height:100vh; */
+    width: 100%;
+    position: relative;
+    background-attachment: fixed;
+    margin: 0;
+    height: 40vh;
+   
+}
+.aboutus::before{
+
+    background-image:url("699.jpg");
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.8;
+    content: '';
+    inset: 0;
+    
+    
+}
+
+.aboutalign{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.aboutustext{
+    font-size: 100px;
 }

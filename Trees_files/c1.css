@@ -11,12 +11,12 @@ section{
 }
 
 section::before{
-    background-image:url("treebg.jpg");
+    background-image:url("699.jpg");
     background-size: cover;
     position: absolute;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    opacity: 0.2;
+    opacity: 0.4;
     content: '';
     inset: 0;    
 }
@@ -117,3 +117,139 @@ a:hover{
     background-color: darkgreen;
     border-color: darkgreen;
   }
+
+/* footter to be edit */
+
+
+/* COPY CSS */
+
+.follow-us-icon-container {
+    background-color: #faf7e8;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 15px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 22px;
+}
+
+
+
+.follow-us-heading {
+    text-align: center;
+    color: #183b56;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.follow-us-section-icon-container {
+    background-color: #faf7e8;
+    border-width: 0px;
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 22px;
+    margin: 10px;
+
+}
+
+.footer-section-container {
+    background-color: #0d2436;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.footer-section-container2 {
+    background-color: #081722;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+.footer-section-image {
+    width: 60px;
+    height: 60px;
+
+}
+
+.footer-heading {
+    color: #959ead;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.footer-section-order-place-discription {
+    color: #959ead;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 15px;
+}
+.prc-image{
+    padding-top:75px;
+}
+.bhanu-image{
+    height: 100px;
+    width: 180px;
+}
+
+
+.follow-heading{
+    color:white;
+    text-align: right;
+
+}
+
+
+.footersection{
+    display: flex;
+    justify-content: space-between;
+}
+
+.follow-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/*  */
+
+/* page info */
+
+.page_info{
+    padding: 10px 10px;
+    max-width: 1600px;
+    background-color: rgb(184, 236, 184);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.infoprovider{
+    font-weight: bold;
+    padding-right: 50px;
+}
+
+.webdeveloper{
+    font-weight: bold;
+    padding-left: 50px;
+
+}
+ 
+
+/* COPY CSS */
