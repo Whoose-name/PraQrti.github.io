@@ -20,6 +20,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
 
@@ -29,7 +30,7 @@
 
 <div class="feedback-form">
     <h2>Leave your feedback</h2>
-    <form action="#">
+    <form id="submit-form" action="">
      
      
       <label for="rating">Rate your experience:</label>
@@ -53,6 +54,24 @@
       <a href="index.html"><br>Home</a>
     </form>
   </div>
+  <script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbw3KFOxKeqc5pE08SEhcUH7zb24xX8EXspDy-fzZFEHAlouxEQzeI2jv7H3DjxIJ68Jgw/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.href="https://whoose-name.github.io/PraQrti.github.io/index.html"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
 </head>
 </html>
   
