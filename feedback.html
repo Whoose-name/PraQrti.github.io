@@ -36,31 +36,36 @@
 </fieldset>
 
 
-      <label for="feedback">How was your experience?</label>
+      <label for="feedback">What is your feedback</label>
       <textarea id="feedback" name="feedback"></textarea>
-      <button type="submit">Submit</button>
+      <button type="submit" >Submit</button>
 
 <br>      <h6>So currently this form is in the testing state its working properly but some issues are there so please only submit this form once at a time</h2>
 
     </form>
   </div>
   <script>
-    $("#submit-form").submit((e)=>{
-        e.preventDefault()
+    
+$("#submit-form").submit((e)=>{
+    e.preventDefault();
+    $("button[type='submit']").prop("disabled", true);
         $.ajax({
-            url:"https://script.google.com/macros/s/AKfycbw3KFOxKeqc5pE08SEhcUH7zb24xX8EXspDy-fzZFEHAlouxEQzeI2jv7H3DjxIJ68Jgw/exec",
-            data:$("#submit-form").serialize(),
-            method:"post",
-            success:function (response){
-                alert("Form submitted successfully")
-                window.location.href="https://whoose-name.github.io/PraQrti.github.io/index.html"
-            },
-            error:function (err){
-                alert("Something Error")
-
-            }
-        })
-    })
+        url:"https://script.google.com/macros/s/AKfycbw3KFOxKeqc5pE08SEhcUH7zb24xX8EXspDy-fzZFEHAlouxEQzeI2jv7H3DjxIJ68Jgw/exec",
+        data:$("#submit-form").serialize(),
+        method:"post",
+        success:function (response){
+            alert("Thanks for your feedback (^-^)");
+            window.location.href="https://whoose-name.github.io/PraQrti.github.io/index.html";
+        },
+        error:function (err){
+            alert("Something Error");
+            $("button[type='submit']").prop("disabled", true);
+        },
+        complete:function(){
+            $("#submit-button").prop("disabled", false); // re-enable the submit button
+        }
+    });
+});
 </script>
 </head>
 </html>
