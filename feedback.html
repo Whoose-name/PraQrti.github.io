@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<title>PraQRti – Feedback</title>
+<title>PraQRti â€“ Feedback</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -75,12 +75,12 @@
       <!-- Feedback Text -->
       <div class="fb-group">
         <label for="feedback">What is your feedback?</label>
-        <textarea id="feedback" name="feedback" class="fb-textarea" placeholder="Share your thoughts…" required></textarea>
+        <textarea id="feedback" name="feedback" class="fb-textarea" placeholder="Share your thoughtsâ€¦" required></textarea>
       </div>
 
       <button type="submit" id="submit-btn" class="fb-btn">
         <span id="btn-text">Submit Feedback</span>
-        <span id="btn-spinner" style="display:none;">Sending…</span>
+        <span id="btn-spinner" style="display:none;">Sendingâ€¦</span>
       </button>
 
     </form>
@@ -144,7 +144,7 @@ $("#submit-form").submit(function(e){
   e.preventDefault();
   var name = $("#name").val().trim();
   var fb   = $("#feedback").val().trim();
-  if(!name || !fb){ alert("Please fill in your name and feedback."); return; }
+  if(!name || !fb){ $("#error-msg").text("Please fill in your name and feedback.").show(); return; }
   $("#submit-btn").prop("disabled", true);
   $("#btn-text").hide(); $("#btn-spinner").show();
   $("#success-msg, #error-msg").hide();
@@ -169,65 +169,3 @@ $("#submit-form").submit(function(e){
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
-<div class="feedback-form">
-    <h2>Leave your feedback</h2>
-    <br>
-    <form id="submit-form" action="">
-     
-     
-      <label for="rating">Rate your experience:</label>
-<fieldset class="rating">
-  <input type="radio" id="star5" name="rating" value="5">
-  <label for="star5" title="5 stars">5&#9733;</label>
-  <input type="radio" id="star4" name="rating" value="4">
-  <label for="star4" title="4 stars">4&#9733;</label>
-  <input type="radio" id="star3" name="rating" value="3">
-  <label for="star3" title="3 stars">3&#9733; </label>
-  <input type="radio" id="star2" name="rating" value="2">
-  <label for="star2" title="2 stars">2&#9733; </label>
-  <input type="radio" id="star1" name="rating" value="1">
-  <label for="star1" title="1 star">1&#9733; </label>
-</fieldset>
-
-
-      <label for="feedback">What is your feedback</label>
-      <textarea id="feedback" name="feedback"></textarea>
-      <button type="submit" >Submit</button>
-
-<br>      <h6>So currently this form is in the testing state its working properly but some issues are there so please only submit this form once at a time</h2>
-
-    </form>
-  </div>
-  <script>
-    
-$("#submit-form").submit((e)=>{
-    e.preventDefault();
-    $("button[type='submit']").prop("disabled", true);
-        $.ajax({
-        url:"https://script.google.com/macros/s/AKfycbw3KFOxKeqc5pE08SEhcUH7zb24xX8EXspDy-fzZFEHAlouxEQzeI2jv7H3DjxIJ68Jgw/exec",
-        data:$("#submit-form").serialize(),
-        method:"post",
-        success:function (response){
-            alert("Thanks for your feedback (^-^)");
-            window.location.href="https://whoose-name.github.io/PraQrti.github.io/index.html";
-        },
-        error:function (err){
-            alert("Something Error");
-            $("button[type='submit']").prop("disabled", true);
-        },
-        complete:function(){
-            $("#submit-button").prop("disabled", false); // re-enable the submit button
-        }
-    });
-});
-</script>
-</head>
-</html>
-  

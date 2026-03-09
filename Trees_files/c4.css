@@ -9,13 +9,18 @@ html, body {
 }
 
 body {
-  background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(campus.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url(home.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+/* iOS Safari doesn't support background-attachment: fixed — fall back to scroll */
+@supports (-webkit-overflow-scrolling: touch) {
+  body { background-attachment: scroll; }
 }
 
 main.feedback-page {
