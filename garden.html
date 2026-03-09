@@ -1,141 +1,343 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Garden</title>
+<title>PraQRti – Garden</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="Trees_files/c3.css" rel="stylesheet" type="text/css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.co.m/css2?family=Signika:wght@500&display=swap" rel="stylesheet">
-
-<script>
-	window.onload = function() {
-		sortList();
-	}
-
-	function sortList() {
-		var list, i, switching, b, shouldSwitch;
-		list = document.getElementById("myList");
-		switching = true;
-		while (switching) {
-			switching = false;
-			b = list.getElementsByTagName("LI");
-			for (i = 0; i < (b.length - 1); i++) {
-				shouldSwitch = false;
-				if (b[i].getElementsByTagName("A")[0].innerHTML.toLowerCase() > b[i + 1].getElementsByTagName("A")[0].innerHTML.toLowerCase()) {
-					shouldSwitch = true;
-					break;
-				}
-			}
-			if (shouldSwitch) {
-				b[i].parentNode.insertBefore(b[i + 1], b[i]);
-				switching = true;
-			}
-		}
-	}
-</script>
-
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Kanit:wght@300&family=Signika:wght@500&display=swap" rel="stylesheet">
+<link href="Trees_files/c3.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-	
-<section>
+
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-	<div class="container-fluid">
-		<a class="navbar-brand" href="#"><img src="Trees_files/PraQRti_logo_1-transformed.jpg" height="40px" width="150px" ></a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-		data-bs-target="#navbarResponsive">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="index.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="media.html">Media</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="garden.html">Garden</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="feedback.html">Feedback</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="Trees_files/PraQRti_logo_1-transformed.jpg" height="40px" width="150px" loading="lazy">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
+        <li class="nav-item active"><a class="nav-link" href="garden.html">Garden</a></li>
+        <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
-<!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
-	<ol id="myList">
-		<!--
-		<a href="Ficus.html"><li>Ficus</li></a>
-		<a href="Casuarina equisetifolia.html"><li>Casuarina equisetifolia</li></a>
-		<a href="Caryota urens.html"><li>Caryota urens</li></a>
-		<a href="Livistona chinensis.html"><li>Livistona chinensis</li></a>
-		<a href="Magnolia champaca.html"><li>Magnolia champaca</li></a>
-		<a href="Frangipani.html"><li>Frangipani</li></a>
-		-->
+<main class="garden-main">
 
-		<li><a href="Ficus.html">Ficus</a></li>
-		<li><a href="Casuarina equisetifolia.html">Casuarina equisetifolia</a></li>
-		<li><a href="Caryota urens.html">Caryota urens</a></li>
-		<li><a href="Livistona chinensis.html">Livistona chinensis</a></li>
-		<li><a href="Magnolia champaca.html">Magnolia champaca</a></li>
-		<li><a href="Frangipani.html">Frangipani</a></li>
-		<li><a href="Monoon longifolium.html">Monoon longifolium</a></li>
-		<li><a href="Hyophorbe lagenicaulis.html">Hyophorbe lagenicaulis</a></li>
-		<li><a href="Eucalyptus globulus.html">Eucalyptus globulus</a></li>
-		<li><a href="Alstonia scholaris.html">Alstonia scholaris</a></li>
-		<li><a href="Mangifera indica.html">Mangifera indica</a></li>
-		<li><a href="Azadirachta indica.html">Azadirachta indica</a></li>
-		<li><a href="Ficus religiosa.html">Ficus religiosa</a></li>
-		<li><a href="Cassia fistula.html">Cassia fistula</a></li>
-		<li><a href="Hymenocallis littoralis.html">Hymenocallis littoralis</a></li>
-		<li><a href="Dracaena trifasciata.html">Dracaena trifasciata</a></li>
-		<li><a href="Millettia pinnata.html">Millettia pinnata</a></li>
-		<li><a href="Ficus racemosa.html">Ficus racemosa</a></li>
-		<li><a href="Cycas.html">Cycas</a></li>
-		<li><a href="Petunia.html">Petunia</a></li>
-		<li><a href="Chlorophytum comosum.html">Chlorophytum comosum</a></li>
-		<li><a href="Mimusops elengi.html">Mimusops elengi</a></li>
-		<li><a href="Hibiscus.html">Hibiscus</a></li>
-		<li><a href="Prosopis juliflora.html">Prosopis juliflora</a></li>
-		<li><a href="Hamelia patens.html">Hamelia patens</a></li>
-		<li><a href="Dragon dracaena.html">Dragon dracaena</a></li>
-		<li><a href="Clerodendrum inerme.html">Clerodendrum inerme</a></li>
-		<li><a href="Calendula officinalis.html">Calendula officinalis</a></li>
-		<li><a href="Dianthus.html">Dianthus</a></li>
-		<li><a href="Salvia plant.html">Salvia plant</a></li>
-		<li><a href="Yucca plant.html">Yucca plant</a></li>
-		<li><a href="Bougainvillea.html">Bougainvillea</a></li>
-		<li><a href="Lantana camara.html">Lantana camara</a></li>
-		<li><a href="Cotton plant.html">Cotton plant</a></li>
-		<li><a href="Cinereria maritima.html">Cinereria maritima</a></li>
-		<li><a href="Mitragyna parviflora.html">Mitragyna parviflora</a></li>
-		<li><a href="Psidium guajava.html">Psidium guajava</a></li>
-		<li><a href="Syzygium cumini.html">Syzygium cumini</a></li>
-		<li><a href="Thuja orientalis.html">Thuja orientalis</a></li>
-		<li><a href="Tropaeolum majus.html">Tropaeolum majus</a></li>
-		<li><a href="Ficus benjamina.html">Ficus benjamina</a></li>
-		<li><a href="Ficus microcarpa.html">Ficus microcarpa</a></li>
-		<li><a href="Tecoma stans.html">Tecoma stans</a></li>
-		<li><a href="Codiaeum variegatum.html">Codiaeum variegatum</a></li>
-		<li><a href="Casia auriculata.html">Casia auriculata</a></li>
-	</ol>
-	
-<br>
-</section>
+  <!-- Header -->
+  <div class="garden-header">
+    <h1 class="garden-title">Plant Catalog</h1>
+    <p class="garden-subtitle">Explore the trees and plants of Hansraj College campus</p>
+
+    <!-- Search -->
+    <div class="garden-search-wrap">
+      <input type="text" id="plantSearch" class="garden-search" placeholder="&#128269; Search plants…" oninput="filterCards()" autocomplete="off">
+    </div>
+  </div>
+
+  <!-- Count -->
+  <p id="plant-count" class="plant-count"></p>
+
+  <!-- Card Grid -->
+  <div class="plant-grid" id="plantGrid">
+
+    <a href="Alstonia scholaris.html" class="plant-card">
+      <img src="Trees_files/Alstonia scholaris.jpg" alt="Alstonia scholaris" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Alstonia scholaris</span></div>
+    </a>
+
+    <a href="Azadirachta indica.html" class="plant-card">
+      <img src="Trees_files/Azadirachta indica.jpg" alt="Azadirachta indica" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Azadirachta indica</span></div>
+    </a>
+
+    <a href="Bougainvillea.html" class="plant-card">
+      <img src="Trees_files/Bougainvillea.jpeg" alt="Bougainvillea" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Bougainvillea</span></div>
+    </a>
+
+    <a href="Calendula officinalis.html" class="plant-card">
+      <img src="Trees_files/Calendula officinalis.jpg" alt="Calendula officinalis" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Calendula officinalis</span></div>
+    </a>
+
+    <a href="Caryota urens.html" class="plant-card">
+      <img src="Trees_files/Caryota urens.jpeg" alt="Caryota urens" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Caryota urens</span></div>
+    </a>
+
+    <a href="Casia auriculata.html" class="plant-card">
+      <img src="Trees_files/Casia auriculata.jpg" alt="Casia auriculata" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Casia auriculata</span></div>
+    </a>
+
+    <a href="Cassia fistula.html" class="plant-card">
+      <img src="Trees_files/Cassia fistula.jpg" alt="Cassia fistula" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Cassia fistula</span></div>
+    </a>
+
+    <a href="Casuarina equisetifolia.html" class="plant-card">
+      <img src="Trees_files/Casuarina equisetifolia.jpeg" alt="Casuarina equisetifolia" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Casuarina equisetifolia</span></div>
+    </a>
+
+    <a href="Chlorophytum comosum.html" class="plant-card">
+      <img src="Trees_files/Chlorophytum comosum.jpg" alt="Chlorophytum comosum" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Chlorophytum comosum</span></div>
+    </a>
+
+    <a href="Cinereria maritima.html" class="plant-card">
+      <img src="Trees_files/Cinereria maritima.jpg" alt="Cinereria maritima" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Cinereria maritima</span></div>
+    </a>
+
+    <a href="Clerodendrum inerme.html" class="plant-card">
+      <img src="Trees_files/Clerodendrum inerme.jpg" alt="Clerodendrum inerme" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Clerodendrum inerme</span></div>
+    </a>
+
+    <a href="Codiaeum variegatum.html" class="plant-card">
+      <img src="Trees_files/Codiaeum variegatum.jpg" alt="Codiaeum variegatum" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Codiaeum variegatum</span></div>
+    </a>
+
+    <a href="Cotton plant.html" class="plant-card">
+      <img src="Trees_files/Cotton plant.jpg" alt="Cotton plant" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Cotton plant</span></div>
+    </a>
+
+    <a href="Cycas.html" class="plant-card">
+      <img src="Trees_files/Cycas.jpg" alt="Cycas" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Cycas</span></div>
+    </a>
+
+    <a href="Dianthus.html" class="plant-card">
+      <img src="Trees_files/Dianthus.jpg" alt="Dianthus" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Dianthus</span></div>
+    </a>
+
+    <a href="Dracaena trifasciata.html" class="plant-card">
+      <img src="Trees_files/Dracaena trifasciata.jpg" alt="Dracaena trifasciata" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Dracaena trifasciata</span></div>
+    </a>
+
+    <a href="Dragon dracaena.html" class="plant-card">
+      <img src="Trees_files/Dragon dracaena.jpg" alt="Dragon dracaena" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Dragon dracaena</span></div>
+    </a>
+
+    <a href="Eucalyptus globulus.html" class="plant-card">
+      <img src="Trees_files/Eucalyptus globulus.jpg" alt="Eucalyptus globulus" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Eucalyptus globulus</span></div>
+    </a>
+
+    <a href="Ficus benjamina.html" class="plant-card">
+      <img src="Trees_files/Ficus benjamina.jpg" alt="Ficus benjamina" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Ficus benjamina</span></div>
+    </a>
+
+    <a href="Ficus microcarpa.html" class="plant-card">
+      <img src="Trees_files/Ficus microcarpa.jpg" alt="Ficus microcarpa" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Ficus microcarpa</span></div>
+    </a>
+
+    <a href="Ficus racemosa.html" class="plant-card">
+      <img src="Trees_files/Ficus racemosa.jpg" alt="Ficus racemosa" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Ficus racemosa</span></div>
+    </a>
+
+    <a href="Ficus religiosa.html" class="plant-card">
+      <img src="Trees_files/Ficus religiosa.jpg" alt="Ficus religiosa" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Ficus religiosa</span></div>
+    </a>
+
+    <a href="Ficus.html" class="plant-card">
+      <img src="Trees_files/Ficus.jpeg" alt="Ficus" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Ficus</span></div>
+    </a>
+
+    <a href="Frangipani.html" class="plant-card">
+      <img src="Trees_files/Frangipani.jpg" alt="Frangipani" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Frangipani</span></div>
+    </a>
+
+    <a href="Hamelia patens.html" class="plant-card">
+      <img src="Trees_files/Hamelia patens.jpg" alt="Hamelia patens" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Hamelia patens</span></div>
+    </a>
+
+    <a href="Hibiscus.html" class="plant-card">
+      <img src="Trees_files/Hibiscus.jpg" alt="Hibiscus" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Hibiscus</span></div>
+    </a>
+
+    <a href="Hymenocallis littoralis.html" class="plant-card">
+      <img src="Trees_files/Hymenocallis littoralis.jpg" alt="Hymenocallis littoralis" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Hymenocallis littoralis</span></div>
+    </a>
+
+    <a href="Hyophorbe lagenicaulis.html" class="plant-card">
+      <img src="Trees_files/Hyphorbe lagenicaulis.jpg" alt="Hyophorbe lagenicaulis" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Hyophorbe lagenicaulis</span></div>
+    </a>
+
+    <a href="Lantana camara.html" class="plant-card">
+      <img src="Trees_files/Lantana camara.jpg" alt="Lantana camara" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Lantana camara</span></div>
+    </a>
+
+    <a href="Livistona chinensis.html" class="plant-card">
+      <img src="Trees_files/Livistona chinensis.jpeg" alt="Livistona chinensis" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Livistona chinensis</span></div>
+    </a>
+
+    <a href="Magnolia champaca.html" class="plant-card">
+      <img src="Trees_files/Magnolia champaca.jpg" alt="Magnolia champaca" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Magnolia champaca</span></div>
+    </a>
+
+    <a href="Mangifera indica.html" class="plant-card">
+      <img src="Trees_files/Mangifera indica.jpg" alt="Mangifera indica" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Mangifera indica</span></div>
+    </a>
+
+    <a href="Millettia pinnata.html" class="plant-card">
+      <img src="Trees_files/Millettia pinnata.jpg" alt="Millettia pinnata" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Millettia pinnata</span></div>
+    </a>
+
+    <a href="Mimusops elengi.html" class="plant-card">
+      <img src="Trees_files/Mimusops elengi.jpg" alt="Mimusops elengi" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Mimusops elengi</span></div>
+    </a>
+
+    <a href="Mitragyna parviflora.html" class="plant-card">
+      <img src="Trees_files/Mitragyna parviflora.jpg" alt="Mitragyna parviflora" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Mitragyna parviflora</span></div>
+    </a>
+
+    <a href="Monoon longifolium.html" class="plant-card">
+      <img src="Trees_files/Monoon longifolium.jpg" alt="Monoon longifolium" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Monoon longifolium</span></div>
+    </a>
+
+    <a href="Petunia.html" class="plant-card">
+      <img src="Trees_files/Petunia.jpg" alt="Petunia" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Petunia</span></div>
+    </a>
+
+    <a href="Prosopis juliflora.html" class="plant-card">
+      <img src="Trees_files/Prosopis juliflora.jpg" alt="Prosopis juliflora" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Prosopis juliflora</span></div>
+    </a>
+
+    <a href="Psidium guajava.html" class="plant-card">
+      <img src="Trees_files/Psidium guajava.jpg" alt="Psidium guajava" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Psidium guajava</span></div>
+    </a>
+
+    <a href="Salvia plant.html" class="plant-card">
+      <img src="Trees_files/Salvia plant.jpg" alt="Salvia plant" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Salvia plant</span></div>
+    </a>
+
+    <a href="Syzygium cumini.html" class="plant-card">
+      <img src="Trees_files/Syzygium cumini.jpg" alt="Syzygium cumini" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Syzygium cumini</span></div>
+    </a>
+
+    <a href="Tecoma stans.html" class="plant-card">
+      <img src="Trees_files/Tecoma stans.jpg" alt="Tecoma stans" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Tecoma stans</span></div>
+    </a>
+
+    <a href="Thuja orientalis.html" class="plant-card">
+      <img src="Trees_files/Thuja orientalis.jpg" alt="Thuja orientalis" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Thuja orientalis</span></div>
+    </a>
+
+    <a href="Tropaeolum majus.html" class="plant-card">
+      <img src="Trees_files/Tropaeolum majus.jpg" alt="Tropaeolum majus" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Tropaeolum majus</span></div>
+    </a>
+
+    <a href="Yucca plant.html" class="plant-card">
+      <img src="Trees_files/Yucca plant.jpg" alt="Yucca plant" loading="lazy">
+      <div class="plant-card-body"><span class="plant-name">Yucca plant</span></div>
+    </a>
+
+  </div>
+
+  <!-- No results -->
+  <p id="no-results" style="display:none;" class="no-results">No plants found matching your search.</p>
+
+</main>
+
+<!-- FOOTER -->
+<div class="footer-section-container">
+  <div class="container py-4">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-6 text-center text-md-start pb-3 pb-md-0">
+        <a href="index.html"><img src="Trees_files/PraQRti_logo_1-transformed.jpg" height="40px" width="150px" loading="lazy"></a>
+        <p class="footer-heading mt-2 mb-0">hrcpraqrti@treeinfo.com</p>
+      </div>
+      <div class="col-12 col-md-6 text-center text-md-end">
+        <h5 class="follow-heading mb-2">Follow Us</h5>
+        <div class="follow-logo justify-content-center justify-content-md-end">
+          <a href="https://www.instagram.com/" class="m-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="WHITE" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg></a>
+          <a href="https://www.facebook.com/" class="m-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="WHITE" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg></a>
+          <a href="https://www.twitter.com/" class="m-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="WHITE" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer-section-container2">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 pt-4 pb-1 text-center">
+        <p class="footer-section-order-place-discription">Copyright &copy; 2023 Hansraj College. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scroll To Top -->
+<button id="scrollTopBtn" title="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8679;</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script>
+// Search / filter
+function filterCards() {
+  var q = document.getElementById('plantSearch').value.toLowerCase().trim();
+  var cards = document.querySelectorAll('.plant-card');
+  var visible = 0;
+  cards.forEach(function(c) {
+    var name = c.querySelector('.plant-name').textContent.toLowerCase();
+    if (!q || name.includes(q)) { c.style.display = ''; visible++; }
+    else { c.style.display = 'none'; }
+  });
+  document.getElementById('plant-count').textContent = visible + ' plant' + (visible !== 1 ? 's' : '');
+  document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
+}
+
+// Init count
+filterCards();
+
+// Scroll-to-top visibility
+window.addEventListener('scroll', function(){
+  document.getElementById('scrollTopBtn').style.display = window.scrollY > 300 ? 'block' : 'none';
+});
+</script>
 </body>
 </html>

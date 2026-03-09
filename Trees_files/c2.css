@@ -486,6 +486,27 @@ html{
     font-size: 100px;
 }
 
+/* Scroll to top button */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 999;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+  transition: background 0.2s;
+}
+#scrollTopBtn:hover { background: #1b5e20; }
+
 /* ============================================================
    MOBILE RESPONSIVENESS
    ============================================================ */

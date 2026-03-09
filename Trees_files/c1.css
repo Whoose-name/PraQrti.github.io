@@ -252,4 +252,53 @@ a:hover{
 }
  
 
-/* COPY CSS */
+/* ---- Scroll to top button ---- */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 999;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+  transition: background 0.2s;
+}
+#scrollTopBtn:hover { background: #1b5e20; }
+
+/* Fix background-attachment for iOS */
+@supports (-webkit-overflow-scrolling: touch) {
+  section, section::before { background-attachment: scroll; }
+}
+@media (max-width: 768px) {
+  section, section::before { background-attachment: scroll; }
+
+  .img_lef {
+    float: none;
+    display: block;
+    margin: 16px auto;
+    width: 90% !important;
+    height: auto !important;
+    max-width: 340px;
+  }
+  h1 { padding-right: 0; font-size: 26px; }
+  h3 { padding-right: 0; }
+  .pad { padding: 12px; }
+
+  .page_info {
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+  }
+  .infoprovider { padding-right: 0; }
+  .webdeveloper { padding-left: 0; }
+
+  .butof { width: 45% !important; font-size: 13px; }
+}

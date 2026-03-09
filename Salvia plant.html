@@ -31,7 +31,7 @@
 <section>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
 	<div class="container-fluid">
-		<a class="navbar-brand" href="#"><img src="Trees_files/PraQRti_logo_1-transformed.jpg" height="40px" width="150px" ></a>
+		<a class="navbar-brand" href="#"><img loading="lazy" src="Trees_files/PraQRti_logo_1-transformed.jpg" height="40px" width="150px" ></a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
 		data-bs-target="#navbarResponsive">
 			<span class="navbar-toggler-icon"></span>
@@ -42,13 +42,13 @@
 					<a class="nav-link" href="index.html">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Media</a>
+					<a class="nav-link" href="media.html">Media</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="garden.html">Garden</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">About us</a>
+					<a class="nav-link" href="index.html#aboutUS">About Us</a>
 				</li>
 			</ul>
 		</div>
@@ -57,7 +57,7 @@
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <div class="pad">
-<img class="img_lef" src="Trees_files/Salvia plant.jpg" width="300" height="180">
+<img loading="lazy" class="img_lef" src="Trees_files/Salvia plant.jpg" width="300" height="180">
 <h1><i>Salvia plant</i></h1>
 <ul>
     <li>Salvia is a genus of plants in the mint family (Lamiaceae) that includes over 900 species, many of which are popular garden plants. <i>Salvia plants</i> are known for their aromatic foliage and colorful flowers, which can range in color from blue and purple to pink and red.</li>
@@ -123,7 +123,7 @@
 			<div class="col-6 pt-5 pb-5">
 				<div class="d-flex flex-column justify-content-start ">
 
-					<a class="navbar-brand " href="#"><img src="Trees_files/PraQRti_logo_1-transformed.jpg" height="40px" width="150px" ></a>
+					<a class="navbar-brand " href="#"><img loading="lazy" src="Trees_files/PraQRti_logo_1-transformed.jpg" height="40px" width="150px" ></a>
 
 					<h1 class="footer-heading">hrcpraqrti@treeinfo.com</h1>
 					
@@ -196,5 +196,10 @@
 
 </section>
 
+
+<button id="scrollTopBtn" title="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8679;</button>
+<script>
+window.addEventListener('scroll',function(){document.getElementById('scrollTopBtn').style.display=window.scrollY>300?'block':'none';});
+</script>
 </body>
 </html>

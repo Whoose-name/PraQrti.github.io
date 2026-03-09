@@ -29,7 +29,7 @@
 <section>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
 	<div class="container-fluid">
-		<a class="navbar-brand" href="#"><img src="Trees_files/PraQRti_logo_1-transformed.jpg" height="40px" width="150px" ></a>
+		<a class="navbar-brand" href="#"><img loading="lazy" src="Trees_files/PraQRti_logo_1-transformed.jpg" height="40px" width="150px" ></a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
 		data-bs-target="#navbarResponsive">
 			<span class="navbar-toggler-icon"></span>
@@ -40,13 +40,13 @@
 					<a class="nav-link" href="index.html">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Media</a>
+					<a class="nav-link" href="media.html">Media</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="garden.html">Garden</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">About us</a>
+					<a class="nav-link" href="index.html#aboutUS">About Us</a>
 				</li>
 			</ul>
 		</div>
@@ -55,7 +55,7 @@
 
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <div class="pad">
-<img class="img_lef" src="Trees_files/Lantana camara.jpg" width="340" height="340">
+<img loading="lazy" class="img_lef" src="Trees_files/Lantana camara.jpg" width="340" height="340">
 <h1><i>Lantana camara</i></h1>
 <ul>
     <li><i>Lantana camara</i> (common lantana) is a species of flowering plant within the verbena family(Verbenaceae), native to the American tropics.</li>
@@ -122,7 +122,7 @@
 				<div class="col-6 pt-5 pb-5">
 					<div class="d-flex flex-column justify-content-start ">
 	
-						<a class="navbar-brand " href="#"><img src="Trees_files/PraQRti_logo_1-transformed.jpg" height="40px" width="150px" ></a>
+						<a class="navbar-brand " href="#"><img loading="lazy" src="Trees_files/PraQRti_logo_1-transformed.jpg" height="40px" width="150px" ></a>
 	
 						<h1 class="footer-heading">hrcpraqrti@treeinfo.com</h1>
 						
@@ -191,5 +191,10 @@
 	</div> 
 	
 </section>
+
+<button id="scrollTopBtn" title="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8679;</button>
+<script>
+window.addEventListener('scroll',function(){document.getElementById('scrollTopBtn').style.display=window.scrollY>300?'block':'none';});
+</script>
 </body>
 </html>
