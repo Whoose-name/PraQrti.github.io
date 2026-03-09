@@ -431,11 +431,13 @@ html{
 
 
 .follow-heading{
-    color:white;
-    text-align: right;
-
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: inherit;
+    padding-top: 0;
 }
-
 
 .footersection{
     display: flex;
@@ -615,26 +617,21 @@ html{
     }
 
     /* Footer */
-    .footersection {
+    .footer-section-container .row {
         flex-direction: column;
         align-items: center;
     }
 
-    .footer-section-container .container .row {
-        flex-direction: column;
+    .footer-section-container .col-12 {
+        text-align: center !important;
     }
 
-    .footer-section-container .col-6 {
-        width: 100%;
-        text-align: center;
+    .follow-logo {
+        justify-content: center !important;
     }
 
     .follow-heading {
         text-align: center;
-    }
-
-    .follow-logo {
-        justify-content: center;
     }
 
     h3 {
