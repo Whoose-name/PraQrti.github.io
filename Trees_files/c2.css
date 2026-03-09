@@ -457,7 +457,7 @@ html{
     position: relative;
     background-attachment: fixed;
     margin: 0;
-    height: 40vh;
+    min-height: 40vh;
    
 }
 .aboutus::before{
@@ -482,4 +482,179 @@ html{
 
 .aboutustext{
     font-size: 100px;
+}
+
+/* ============================================================
+   MOBILE RESPONSIVENESS
+   ============================================================ */
+
+/* Fix background-attachment: fixed on iOS (Safari ignores it, causes blank backgrounds) */
+@supports (-webkit-overflow-scrolling: touch) {
+    section, section::before, .aboutus, .aboutus::before {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 768px) {
+    /* iOS background-attachment fix */
+    section, section::before,
+    .aboutus, .aboutus::before {
+        background-attachment: scroll;
+    }
+
+    /* Body */
+    body {
+        background-attachment: scroll;
+    }
+
+    /* Main padding */
+    main {
+        padding: 40px 0;
+    }
+
+    /* Welcome text */
+    h2.welcome {
+        font-size: 28px;
+    }
+
+    .whtp {
+        font-size: 16px;
+        padding: 0 16px;
+        margin-bottom: 20px;
+    }
+
+    /* Hero buttons */
+    .buttons {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 12px 24px;
+        margin-right: 0;
+        width: 80%;
+        text-align: center;
+    }
+
+    /* Principal section */
+    .principal-grid {
+        grid-template-columns: 1fr;
+        margin: 0 16px;
+    }
+
+    .principal-photo {
+        text-align: center;
+    }
+
+    .prc-image {
+        padding-top: 20px;
+        width: 60% !important;
+        height: auto !important;
+    }
+
+    .principal-text h2 {
+        font-size: 24px;
+    }
+
+    .principal-text p {
+        font-size: 15px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    /* Team section cards */
+    .members-card-container {
+        margin: 10px;
+        width: calc(50% - 20px);
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .suyars-sir-image {
+        height: 100px;
+        width: 100px;
+    }
+
+    .meambers-names {
+        font-size: 14px;
+    }
+
+    .meambers-departmets,
+    .meambers-departmets-span,
+    .meambers-departmets-teacher {
+        font-size: 13px;
+    }
+
+    .praqrtiteam {
+        font-size: 20px !important;
+        text-align: center;
+    }
+
+    /* About Us section */
+    .aboutus {
+        min-height: auto;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .aboutalign {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutustext {
+        font-size: 40px !important;
+    }
+
+    .center p {
+        font-size: 14px;
+        text-align: left;
+        padding: 0 16px;
+    }
+
+    /* Footer */
+    .footersection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section-container .container .row {
+        flex-direction: column;
+    }
+
+    .footer-section-container .col-6 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .follow-heading {
+        text-align: center;
+    }
+
+    .follow-logo {
+        justify-content: center;
+    }
+
+    h3 {
+        padding-right: 0;
+    }
+}
+
+/* Slightly larger phones / small tablets */
+@media (max-width: 480px) {
+    .members-card-container {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
+
+    .suyars-sir-image {
+        height: 80px;
+        width: 80px;
+    }
+
+    .meambers-names {
+        font-size: 13px;
+    }
 }
